@@ -21,6 +21,8 @@ pipeline {
         echo "Integration"
       }
     } 
+
+  }
 	post {
 		success {
 			echo 'Code executed successfully'
@@ -31,4 +33,3 @@ pipeline {
 		}
 	}
   }
-}
