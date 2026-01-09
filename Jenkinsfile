@@ -20,6 +20,15 @@ pipeline {
       steps {
         echo "Integration"
       }
-    }
+    } 
+	post {
+		success {
+			echo 'Code executed successfully'
+		}
+		failure {
+			echo 'Code execution failed'
+
+		}
+	}
   }
 }
