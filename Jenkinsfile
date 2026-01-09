@@ -1,11 +1,40 @@
-node {
-	stage('Build') {
-		echo "Build"
+//Declarative approach
+
+pipeline {
+	agent any
+	stages {
+		stage ('Build') {
+			steps {
+				echo "Build"
+			}
+
+		}
+		
 	}
-	stage('Test') {
-		echo "Test"
+}
+
+pipeline {
+	agent any
+	stages {
+		stage ('Test') {
+			steps {
+				echo "Test"
+			}
+
+		}
+		
 	}
-	stage('Integration Test') {
-		echo "Test"
+}
+
+pipeline {
+	agent any
+	stages {
+		stage ('Integration') {
+			steps {
+				echo "Integration"
+			}
+
+		}
+		
 	}
 }
